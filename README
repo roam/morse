@@ -1,0 +1,52 @@
+morse
+=====
+
+Morse is a simple Adobe AIR application for monitoring multiple Gmail accounts. You can monitor 
+your regular gmail.com account and any Gmail for Your Domain account.
+
+It uses Gmail's Atom feeds (e.g. https://mail.google.com/mail/feed/atom) served over HTTPS do
+determine how many unread conversations are in your inbox.
+
+Usage
+-----
+When running the application for the first time, you'll be asked to enter the account details
+for the first account you want to monitor. All credentials for the accounts are encrypted and 
+stored on the local machine.
+
+You can add more accounts by clicking the '+' at the top left of the window. Overall settings
+can be altered by clicking the gear to the right of the '+'.
+
+To edit the details of an account, click the button in front of it. Click the Edit button to
+save the changes or click cancel to cancel. Click the icon in the lower right corner to delete
+the account.
+
+Clicking the name of the account will fire up your browser and redirect you to your inbox (that 
+is _if_ you're signed in to Gmail in the browser).
+
+Click the number of unread conversations on the right of the account name to set the ignore 
+settings for that account. You can pick one of the following:
+
+- Do not ignore messages:
+	Default option.
+- Ignore all new messages: 
+	Stop monitoring the account
+- Ignore messages received up till now: 
+	Reset the unread counter to zero. Only messages that you'll receive from now on will be
+	shown
+	
+Morse will check each account (unless the account should be ignored) for new conversations
+every 2 minutes.
+	
+
+Missing features
+----------------
+
+01. Morse will not show you the subject or contents of an email - it only shows you how many
+	unread conversations you're dealing with
+	
+02. Morse only monitors the inbox for unread conversations. However, it's relatively easy to
+	add functionality to monitor labels for new messages since there's an Atom feed for each
+	label. The code is free (MIT License), so have at it :)
+	
+03. Unread conversations. Gmail tells you how many unread threads or conversations you've got
+	waiting for you, not how many unread messages. Therefor, Morse does the same.

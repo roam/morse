@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://ns.adobe.com/air/application/1.0">
+    <id>be.roam.morse</id>
+    <version>1.0</version>
+    <filename>morse</filename>
+    <initialWindow>
+        <content>html/morse.html</content>
+        <systemChrome>none</systemChrome>
+        <visible>true</visible>
+        <transparent>true</transparent>
+        <width>250</width>
+        <height>300</height>
+        <maximizable>false</maximizable>
+        <resizable>true</resizable>
+        <minSize>250 30</minSize>
+        <maxSize>800 1600</maxSize>
+    </initialWindow>
+    <icon>
+        <image16x16>images/icons/morse-16.png</image16x16>
+        <image32x32>images/icons/morse-32.png</image32x32>
+        <image48x48>images/icons/morse-48.png</image48x48>
+        <image128x128>images/icons/morse-128.png</image128x128>
+    </icon>
+</application>
